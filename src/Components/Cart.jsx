@@ -1,12 +1,56 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
+// import React from 'react'
+// import { useSelector } from 'react-redux';
+// import { useDispatch } from 'react-redux';
+// import {delCart} from '../redux/action/index'
 
-const Cart = () =>{
-  return (
-    <div>
+// const Cart = () =>{
 
-    </div>
-  ); 
-}
+//   const state = useSelector((state)=> state.addItem)
+//   const dispatch = useDispatch()
 
-export default Cart;
+//   const handleClose = (item) =>{
+//     dispatch(delCart(item))
+//   }
+
+
+//   const cartItems = (cartItem) => {
+//     return(
+//         <div className="px-4 my-5 bg-light rounded-3">
+//           <div className="container py-4">
+//             <button onClick={() =>handleClose(cartItem)} className='btn-close float-end' aria-label="close"></button>
+//             <div className="row justify-content-center">
+//               <div className="col-md-4">
+//                 <img src={cartItem.img} alt={cartItem.title} height="200px" width="180px" />
+//               </div>
+//               <div className="col-md-4">
+//                 <h3>{cartItem.title}</h3>
+//                 <p className='lead fw-bold'>${cartItem.price}</p>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//     );
+//   }
+  
+//   return (
+//     <>
+//             <div className="px-4 my-5 bg-light rounded-3">
+//           <div className="container py-4">
+//             <button onClick={() =>handleClose(cartItem)} className='btn-close float-end' aria-label="close"></button>
+//             <div className="row justify-content-center">
+//               <div className="col-md-4">
+//                 <img src={cartItem.img} alt={cartItem.title} height="200px" width="180px" />
+//               </div>
+//               <div className="col-md-4">
+//                 <h3>{cartItem.title}</h3>
+//                 <p className='lead fw-bold'>${cartItem.price}</p>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//     {state.length !== 0 && state.map(cartItems)}
+//     </>
+//   ); 
+// }
+
+// export default Cart;
