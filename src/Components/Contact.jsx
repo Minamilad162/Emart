@@ -1,56 +1,46 @@
-import React from 'react'
+import React from 'react';
 
-const Contact = () =>{
-
-  return (
-          <div className="section">
-              <div className="container">
-                  <div className="row">
-                      <div className="col-md-12">
-                          <div className="section-title">
-                              <h2 className="title">Contact Us</h2>
-                              <p>Let us know what you think! In order to provide better service,
-                                   please do not hesitate to give us your feedback. Thank you.</p><hr/>
-                              <form id="contact-form" onSubmit={this.submitEmail.bind(this)} 
-                                  method="POST">
-                              <div className="form-group">
-                              <div className="row">
-                              <div className="col-md-6">
-                                  <input placeholder = "Name"  id="name" type="text" 
-                                     className="form-control" required value={this.state.name} 
-                                     onChange={this.onNameChange.bind(this)}/>
-                              </div>
-                              <div className="col-md-6">
-                                  <input placeholder = "Email"  id="email" type="email"
-                                    className="form-control" aria-describedby="emailHelp"
-                                    required value={this.state.email} onChange=
-                                    {this.onEmailChange.bind(this)}/>
-                              </div>
-                              </div>
-                              </div>
-                              <div className="form-group">
-                                  <input placeholder = "Subject"  id="subject" type="text"
-                                    className="form-control" required value={this.state.subject}
-                                    onChange={this.onSubjectChange.bind(this)}/>
-                              </div>
-                              <div className="form-group">
-                                  <textarea placeholder = "Message"  id="message" 
-                                     className="form-control" rows="1" 
-                                     required value={this.state.message}
-                                     onChange= {this.onMsgChange.bind(this)}/>
-                              </div>
-                              <button type="submit" className="primary-btn submit">Submit</button>
-                              </form>
-                          </div>
-                      </div>
-
-                  </div>
-
-              </div>
-          </div>
-      );
-  }
-
-
+const Contact = () => {
+    return (
+        <div>
+            <div className="container mb-5">
+                <div className="row">
+                    <div className="col12 text-center py my-4">
+                        <h1>Have some Question?</h1>
+                        <hr />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-5 d-flex justify-content-center">
+                        <img src="/assets/Contact.png" alt="Contact Us" height="300px" width="300px" />
+                    </div>
+                    <div className="col-md-6">
+                        <form>
+                        <div className="mb-3">
+                                <label for="exampleFormControlInput1" className="form-label">
+                                    Name
+                                </label>
+                                <input type="email" className="form-control" id="Name" placeholder="Name" />
+                            </div>
+                            <div className="mb-3">
+                                <label for="exampleFormControlInput1" className="form-label">
+                                    Email address
+                                </label>
+                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                            </div>
+                            <div className="mb-3">
+                                <label for="exampleFormControlTextarea1" className="form-label">
+                                    Example textarea
+                                </label>
+                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type='submit' className="btn btn-outline-primary">Send message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 export default Contact;
